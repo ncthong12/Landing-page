@@ -1,0 +1,11 @@
+.navbar {
+    padding-left: 100px;
+}
+.navbar-link {
+    padding: 20px;
+    text-decoration: none;
+    color: #07194f;
+    &:hover {
+        color: #19703a;
+    }
+}

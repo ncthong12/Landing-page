@@ -1,0 +1,30 @@
+.wrapper {
+    --search-border-radius: 92px;
+    --search-height: 46px;
+    --search-top-spacer: 9px;
+    --search-button-width: 52px;
+
+    width: 100%;
+    height: var(--default-layout-header-height, 60px);
+
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #02010100;
+    background: #fff !important;
+}
+
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+    padding: 0 var(--default-layout-horizontal-spacer);
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-link {
+    display: flex;
+}
