@@ -5,10 +5,38 @@
 }
 
 .container {
-    width: var(--default-layout-width);
+    margin-top: -78px;
+    padding: 130px 0px 0px 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
+    height: 100vh;
+    width: 1600px;
+    position: relative;
+    z-index: 2;
 }
 
-.content {
+.content-bg {
     flex: 1;
+    background-image: url(https://deltalabsjsc.com/wp-content/uploads/2022/05/Background-Hero-3.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 740px auto;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.content-left {
+    width: 1140px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
 }

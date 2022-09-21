@@ -7,11 +7,14 @@ const cx = classNames.bind(styles);
 function Tintuc() {
     return (
         <div>
-            <h2 className={cx('content')}>Tin tuc</h2>
+            <h1 className={cx('content')}>Tin tuc</h1>
+            <h1 className={cx('content')}>Tin tuc</h1>
+            <h1 className={cx('content')}>Tin tuc</h1>
+            <h1 className={cx('content')}>Tin tuc</h1>
             <img className={cx('user-avatar')} src={images.avatar} alt="Nguyen Van A"></img>
-            <h2 className={cx('content')}>Tin tuc</h2>
+            <h1 className={cx('content')}>Tin tuc</h1>
             <img className={cx('user-avatar')} src={images.avatar} alt="Nguyen Van A"></img>
-            <h2 className={cx('content')}>Tin tuc</h2>
+            <h1 className={cx('content')}>Tin tuc</h1>
             <img className={cx('user-avatar')} src={images.avatar} alt="Nguyen Van A"></img>
         </div>
     );

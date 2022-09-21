@@ -1,0 +1,21 @@
+#top {
+    opacity: 0;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#down {
+    opacity: 1;
+    right: 20px;
+    bottom: 20px;
+    display: block;
+
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+}
