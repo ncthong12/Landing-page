@@ -1,4 +1,14 @@
-.wrapper {
+.content-first {
+    width: 1140px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 3;
+}
+.wrapper-left {
     width: 56.467%;
     display: flex;
     flex-wrap: wrap;

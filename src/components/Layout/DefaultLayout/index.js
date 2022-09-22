@@ -7,14 +7,14 @@ import TopButton from '../components/TopButton';
 const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
-    const [headerClass, setheaderClass] = useState('top');
-    const [showGoToTop, setshowGoToTop] = useState(false);
+    const [headerClass, setheaderClass] = useState('init');
+    // const [showGoToTop, setshowGoToTop] = useState(false);
 
     useEffect(() => {
         const handleScroll = (e) => {
             const scrollTop = window.scrollY;
-            setheaderClass(scrollTop >= 170 ? 'down' : 'top');
-            setshowGoToTop(scrollTop >= 100);
+            setheaderClass(scrollTop >= 120 ? 'down' : headerClass !== 'init' ? 'top' : 'init');
+            // setshowGoToTop(scrollTop >= 100);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -22,17 +22,16 @@ function DefaultLayout({ children }) {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [headerClass]);
 
     return (
         <div className={cx('wrapper')}>
             <Header>{headerClass}</Header>
             <div className={cx('container')}>
                 <div className={cx('content-bg')}></div>
-                <div className={cx('content-left')}>{children}</div>
+                {children}
             </div>
-            {showGoToTop && <TopButton>{'down'}</TopButton>}
-            {/* {showGoToTop && <button style={{ position: 'fixed', right: 20, bottom: 20 }}>Go to top</button>} */}
+            <TopButton>{headerClass}</TopButton>
         </div>
     );
 }

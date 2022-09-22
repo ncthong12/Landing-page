@@ -1,21 +1,46 @@
-#top {
+#init {
     opacity: 0;
     right: 20px;
     bottom: 20px;
     display: none;
-
     position: fixed;
     cursor: pointer;
     z-index: 9999;
 }
 
-#down {
-    opacity: 1;
+#top {
     right: 20px;
     bottom: 20px;
-    display: block;
+    position: fixed;
+    z-index: 9999;
+    animation: fadeOut 1s both !important;
+}
 
+#down {
+    right: 20px;
+    bottom: 20px;
     position: fixed;
     cursor: pointer;
     z-index: 9999;
+    animation: fadeIn 1s both !important;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }

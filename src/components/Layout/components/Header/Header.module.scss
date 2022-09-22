@@ -1,37 +1,55 @@
-.top {
-    --search-border-radius: 92px;
-    --search-height: 46px;
-    --search-top-spacer: 9px;
-    --search-button-width: 52px;
-
+.init {
     width: 100%;
-    //height: var(--default-layout-header-height, 60px);
-
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
-    background: transparent;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    animation-name: top;
+    animation-duration: 1s;
+    animation-fill-mode: both;
     z-index: 3;
 }
 
 .down {
-    --search-border-radius: 92px;
-    --search-height: 46px;
-    --search-top-spacer: 9px;
-    --search-button-width: 52px;
-
     width: 100%;
-    //height: var(--default-layout-header-height, 60px);
 
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
-    background: #fff !important;
+    animation-name: down;
+    animation-duration: 1s;
+    animation-fill-mode: both;
     z-index: 3;
 }
 
+@keyframes top {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+@keyframes down {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #fff;
+    }
+}
 .inner {
     //height: 100%;
     width: var(--default-layout-width);

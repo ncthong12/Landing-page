@@ -7,4 +7,15 @@
     margin-right: auto;
     width: 50%;
     object-fit: contain;
+    z-index: 3;
+}
+
+.wrapper {
+    width: 1140px;
+    height: auto;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 3;
 }
